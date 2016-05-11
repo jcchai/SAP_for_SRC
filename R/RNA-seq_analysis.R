@@ -1,7 +1,10 @@
 ## gene expression data analysis scripts for NCCIT
 ## version 0.1.9
 ## since: 16.SEP.2015
-## last fix:11.NOV.2015
+## last fix:11.MAY.2016
+
+## version 0.1.9
+# fix comments
 
 ## version 0.1.6
 # make drawHeatmap() function and makeDHdataset() function

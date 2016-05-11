@@ -1,9 +1,16 @@
 ## collection of analysis scripts
-## version: 0.0.2
+## version: 0.0.3
 ## since: 01.NOV.2015
-##
+## last fix: 11.MAY.2015
 
+## version 0.0.3
+# add auto install of missing packages
 
+list.of.packages <- c("ggplot2", "Rcpp")
+list.of.packages <- c("assertive.reflection", "benchmarkme", "bookdown", "cranlogs", "data.table", "devtools", "DiagrammeR", "dplyr", "drat", "efficient", "formatR", "fortunes", "ggplot2", "ggplot2movies", "knitr", "lubridate", "microbenchmark", "pryr", "readr", "tidyr")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+#library("assertive.reflection", "benchmarkme", "bookdown", "cranlogs", "data.table", "devtools", "DiagrammeR", "dplyr", "drat", "efficient", "formatR", "fortunes", "ggplot2", "ggplot2movies", "knitr", "lubridate", "microbenchmark", "pryr", "readr", "tidyr")
 ##-----------------------------------------------------------------------------
 ## load library
 library("vsn")
