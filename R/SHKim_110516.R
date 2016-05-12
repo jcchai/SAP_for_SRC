@@ -1,6 +1,10 @@
 ## SHKim 11/5/16
 
 dataset <- read.csv("./data/MSC_data.txt",header= T, sep ="\t")
+dataset <- read.csv("./data/Poly HI_Top 50.txt",header= T, sep ="\t")
+dataset <- read.csv("./data/LPS HI_Top 50.txt",header= T, sep ="\t")
+
+
 dataset
 dataset[1]
 
@@ -16,7 +20,7 @@ library(RColorBrewer)
 
 ## start option of heatmaps
 #hmcol = colorRampPalette(rev(brewer.pal(9, "Spectral")))(100)
-hmcol = colorRampPalette((brewer.pal(9, "YlOrRd")))(100)
+hmcol = colorRampPalette(rev(brewer.pal(9, "RdYlBu")))(100)
 
 # cluster rows
 hc.rows <- hclust(dist(dataset))
