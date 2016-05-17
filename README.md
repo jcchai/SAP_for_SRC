@@ -1,2 +1,10 @@
-# SAP_for_SRC
-Small analysis pipeline for SRC
+#Small analysis pipeline for SRC
+
+## AUTHOR/SUPPORT
+Jin Chai, jcchai@gmail.com
+
+
+
+##Getting Started
+
+makeDDSSet()
